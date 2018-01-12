@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.li {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  text-align: center;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  padding: 0 2%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  align-self: flex-start;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: 10%;
+}
+
+.cart {
+  align-self: flex-end;
+  display: flex;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.nav-container {
+  color: #e2574c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-container ul li {
+  display: inline;
+}
+
+.main-header  {
+  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/flower-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Playfair Display Web,serif;
+  font-size: 3rem;
+  color: #fff;
+  height: 400px;
+  margin-top: 10px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: relative;
+  padding: 4rem;
+  flex-direction: column;
+}
+
+.collection {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.handcrafted-h2 {
+  margin: 0;
+  padding: 70px;
+  border: 0;
+  text-align: center;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px;
+  padding: 10px;
+}
+
+.box-container {
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.box-mens {
+  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/mens-category.1.jpg);
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
+
+.box-trends {
+  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/trends-category.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;  
+}
+
+.box-glasses {
+  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/glasses-category.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.box-sale {
+  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/sale-category.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.box-bags {
+  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/bags-category.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.box-womens {
+  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/womens-category.jpg);
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
+
+.most-loved-products {
+  width: relative;
+  text-align: center;
+  margin: 0%;
+  background-color: skyblue;
+}
+
+.bottom-banner {
+  background: url(/Users/cliffchan/Desktop/RED/project-01/images/wave-bkgd.jpg);
+  background-size: cover;
+
+  width: 200px;
+  height: 200px;
+}
+
+.footer {
+  background-color: yellow;
+}
