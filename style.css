@@ -163,42 +163,42 @@ img {
 }
 
 .box-mens {
-  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/mens-category.1.jpg);
+  background-image: url(./images/mens-category.1.jpg);
   background-size: cover;
   width: 400px;
   height: 200px;
 }
 
 .box-trends {
-  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/trends-category.jpg);
+  background-image: url(./images/trends-category.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;  
 }
 
 .box-glasses {
-  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/glasses-category.jpg);
+  background-image: url(./images/glasses-category.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
 }
 
 .box-sale {
-  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/sale-category.jpg);
+  background-image: url(./images/sale-category.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
 }
 
 .box-bags {
-  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/bags-category.jpg);
+  background-image: url(./images/bags-category.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
 }
 
 .box-womens {
-  background-image: url(/Users/cliffchan/Desktop/RED/project-01/images/womens-category.jpg);
+  background-image: url(./images/womens-category.jpg);
   background-size: cover;
   width: 400px;
   height: 200px;
@@ -212,7 +212,7 @@ img {
 }
 
 .bottom-banner {
-  background: url(/Users/cliffchan/Desktop/RED/project-01/images/wave-bkgd.jpg);
+  background: url(./images/wave-bkgd.jpg);
   background-size: cover;
 
   width: 200px;
