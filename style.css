@@ -1,51 +1,63 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/* CSS RESET */
 
-h2 {
-  font-size: 2.4rem;
-  font-style: italic;
-  margin-bottom: 1.5rem;
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+.box-container h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 40%;
+  color: white;
+  font-family: Raleway Web,sans-serif;
 }
 
 img {
@@ -53,20 +65,9 @@ img {
   height: auto;
 }
 
-.li {
-  display: inline-block;
-  position: relative;
-  list-style: none;
-  text-align: center;
-}
-
-.ul {
-  list-style-type: none;
-}
-
 .container {
   display: flex;
-  padding: 0 2%;
+  padding: 0%;
   margin: 0 auto;
   width: 100%;
 }
@@ -116,13 +117,13 @@ img {
 }
 
 .main-header  {
-  background-image: url(images/flower-bkgd.jpg);
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url(images/banner-girl.png) no-repeat center 10px, url(images/flower-bkgd.jpg) repeat-x top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover,150px 369px,cover;
   font-family: Playfair Display Web,serif;
   font-size: 3rem;
   color: #fff;
-  height: 400px;
+  height: 200px;
   margin-top: 10px;
   position: relative;
   justify-content: center;
@@ -146,79 +147,96 @@ img {
   font: inherit;
   vertical-align: baseline;
 }
+/* OTHER STUFF */
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 2px;
+    padding: 10px;
+    height: 25vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
-.container-1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: 2px;
-  padding: 10px;
-}
+  .box-mens {
+    background-image: url(images/mens-category.1.jpg);
+    background-size: cover;
+    order: 1;
+    width: 50%;
+    height: 200px;
+  }
 
-.box-container {
-  background-size: cover;
-  display: flex;
-  text-align: center;
-  vertical-align: baseline;
-}
+  .box-trends {
+    background-image: url(images/trends-category.jpg);
+    background-size: cover;
+    order: 2;
+    width: 25%;
+    height: 200px;  
+  }
 
-.box-mens {
-  background-image: url(images/mens-category.1.jpg);
-  background-size: cover;
-  width: 400px;
-  height: 200px;
-}
+  .box-glasses {
+    background-image: url(images/glasses-category.jpg);
+    background-size: cover;
+    order: 3;
+    width: 25%;
+    height: 200px;
+  }
 
-.box-trends {
-  background-image: url(images/trends-category.jpg);
-  background-size: cover;
-  width: 200px;
-  height: 200px;  
-}
+  .box-sale {
+    background-image: url(images/sale-category.jpg);
+    background-size: cover;
+    order: 4;
+    width: 25%;
+    height: 200px;
+  }
 
-.box-glasses {
-  background-image: url(images/glasses-category.jpg);
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-}
+  .box-bags {
+    background-image: url(images/bags-category.jpg);
+    background-size: cover;
+    order: 5;
+    width: 25%;
+    height: 200px;
+  }
 
-.box-sale {
-  background-image: url(images/sale-category.jpg);
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-}
+  .box-womens {
+    background-image: url(images/womens-category.jpg);
+    background-size: cover;
+    order: 6;
+    width: 50%;
+    height: 200px;
+  }
 
-.box-bags {
-  background-image: url(images/bags-category.jpg);
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-}
+/* GRID ITEMS  */
+  .most-loved-products {
+    display: flex;
+    text-align: center;
+    background-color: skyblue;
+  }
 
-.box-womens {
-  background-image: url(images/womens-category.jpg);
-  background-size: cover;
-  width: 400px;
-  height: 200px;
-}
+  .li {
+    display: flex;
+    flex-direction: row;
+  }
 
-.most-loved-products {
-  width: relative;
-  text-align: center;
-  margin: 0%;
-  background-color: skyblue;
-}
+  .ul {
+    list-style-type: none;
+  }
 
-.bottom-banner {
-  background: url(images/wave-bkgd.jpg);
-  background-size: cover;
 
-  width: 200px;
-  height: 200px;
-}
 
-.footer {
-  background-color: yellow;
-}
+  .bottom-banner {
+    display: flex;
+    align-content: center;
+
+    background-image: url(images/wave-bkgd.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer {
+    background-color: yellow;
+  }
