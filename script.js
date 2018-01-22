@@ -3,7 +3,8 @@
 $('.main-carousel').flickity({
   // options
   cellAlign: 'left',
-  contain: true
+  contain: true,
+  autoPlay: 5000,
 });
 
 
