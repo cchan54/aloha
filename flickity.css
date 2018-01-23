@@ -111,6 +111,8 @@ http://flickity.metafizzy.co
   align-content: center;
   text-align: center;
   line-height: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .flickity-rtl .flickity-page-dots { direction: rtl; }

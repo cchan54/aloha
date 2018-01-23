@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aloha</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="flickity.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 </head>
@@ -19,12 +19,12 @@
       <img src="images/aloha-logo.svg">
     </div>
 
-    <nav class="nav-container nav-a">
+    <nav class="nav-container">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#featured">Featured</a></li>            
-        <li><a href="#updates">Updates</a></li>
+        <li><a class="nav-a" href="#about">About</a></li>
+        <li><a class="nav-a" href="#shop">Shop</a></li>
+        <li><a class="nav-a" href="#featured">Featured</a></li>            
+        <li><a class="nav-a" href="#updates">Updates</a></li>
       </ul>
     </nav>
 
@@ -42,11 +42,10 @@
   </div>
 
   <div>
-    <section class="handcrafted-h2 h2">
-      <h2>Hand-Crafted
-        <b>Styles</b>
+    <section class="handcrafted-h2">
+      <h2>Hand-Crafted <span class="bold">Styles</span></h2>
       </h2>
-      <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
+      <p class="handcrafted-p">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
         for updates below</p>
     </section>
   </div>
@@ -74,9 +73,9 @@
   </div>
 </div>
 
-  <section class="most-loved-products" id="#Featured">
+  <section class="most-loved-products">
     <h2>
-      Most-Loved <strong>Products</strong>
+      Most-Loved <span class="bold">Products</span>
     </h2>
 
   <div class="main-carousel">
@@ -146,32 +145,39 @@
 
   </div>
 
-  <section class="bottom-banner">
+  <section class="bottom-banner container">
     <div>
       <h3 class= "bottom-banner-h3">Sign-up for <strong>Updates</strong></h3>
       <p class= "bottom-banner-p">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
         our blog. Unsubscribe at any time</p>
     </div>
 
-    <form id="email-form" class="type-email">
-        <input id="email-address" class="email-address" type="email" name="email-input" placeholder="Your Email"/>
+    <form>
+      <div class="type-email">
+        <input class="email-address" type="email" name="email-input" placeholder="Your Email"/>
         <input class="subscribe" type="submit" name="submit" value="Subscribe">
+      </div>
     </form>
-
   </section>
 
 
   <footer class="footer">
+
       <section class="info-a">
           <p>2016 Aloha Apparel Co.</p>
           <p>Powered by HTML and CSS</p>
           <p>604-604-6040</p>
           <a class="email" href="mailto:info@alohaapparel.com">info@alohaapparel.com</a>
-      </section>
-      <section class="address">
-          <p>1490 W Broadway</p>
-          <p>Vancouver, BC, Canada</p>
-      </section>
+      
+
+          <div class="address">
+              <p>1490 W Broadway</p>
+              <p>Vancouver, BC, Canada</p>
+          </div>
+
+    </section>
+
+      
     
       <section class="social-media">
         <p>Facebook</p>
@@ -183,10 +189,9 @@
     
     </footer>
     
-
+  <script src="jquery-3.2.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
-  <script src="smoothscroll.js"></script>  
   <script src="script.js"></script>
 
 </body>

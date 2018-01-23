@@ -5,6 +5,19 @@ $('.main-carousel').flickity({
   cellAlign: 'left',
   contain: true,
   autoPlay: 5000,
+  wrapAround: true
+});
+
+$('form').on("submit", function(event) {
+  event.preventDefault();
+
+  if ($('type-email').val() == '') {
+    alert('Please provide a valid email address.');
+  } 
+  else {
+    alert('Thanks for subscribing!');
+    $('type-email').val('');
+  }
 });
 
 

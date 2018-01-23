@@ -1,3 +1,20 @@
+/* project check in 
+
+font-css attachment
+
+1. logo is not centered
+2. hyperlinks not changing colour
+3. *fixed header
+4. handcrafted styles bold font
+5. information section content spacing
+6. flex box RWD
+7. subscribe button in RWD
+8. important to have right number of dots?
+
+
+*/
+
+
 /* CSS RESET */
 
   html, body, div, span, applet, object, iframe,
@@ -27,8 +44,9 @@
   }
   body {
     line-height: 1;
-    font-family: 'Raleway Light';
+    font-family: 'Raleway';
     margin: 0 auto;
+    color:  #2d2d2d;
   }
   ol, ul {
     list-style: none;
@@ -60,7 +78,7 @@
 
   .main-header {
     background-color: #fff;
-    border-bottom: 2px solid #d7d7d7;
+    /* border-bottom: 2px solid #d7d7d7; */
     width: 100%;
   }
   
@@ -68,6 +86,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 25px;
   }
 
   .nav-header img {
@@ -80,17 +99,15 @@
     color: #e2574c;
     display: inline;
     flex-direction: column;
-    font-family: 'Raleway Web',sans-serif;
-    justify-content: space-between;
-    /* margin: 0;
-    padding: 0; */
+    font-family: 'Raleway';
+    justify-content: space-around;
   }
 
   .nav-container ul li {
     color: #e2574c;
     display: inline;
     font-size: 100%;
-    font-family: "Raleway-Light";
+    font-family: "Raleway";
     font-weight: bold;
     font-style: normal;
     text-decoration: none;
@@ -99,11 +116,12 @@
   .nav-a {
     color: #e2574c;
     font-size: 100%;
-    font-family: "Raleway-Light";
+    font-family: "Raleway";
     font-weight: bold;
     font-style: normal;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 25px;
 }
 
   .container {
@@ -136,16 +154,15 @@
   } */
 
   .logo {
-    align-self: flex-start;
     display: flex;
-    left:0;
-    max-width: 150px;
+    max-width: 160px;
+    max-height: 62px;
   }
 
   .cart {
-    align-self: flex-end;
     display: flex;
-    max-width: 150px;
+    max-width: 62px;
+    max-height: 62px;
   }
 
 /* MAIN HEADER */
@@ -165,13 +182,15 @@
   }
 
   .collection {
+    font-family: 'Raleway';
     font-size: 1.25rem;
+    font-weight: 500;
     margin-bottom: 1.5rem;
   }
 
   .seasons {
-    font-family: 'Playfair Display Web',serif;
-    font-size: 2.5rem;
+    font-family: 'Playfair Display',serif;
+    font-size: 3rem;
     font-weight: 400;
     text-transform: none;
   }
@@ -180,14 +199,32 @@
 /* MIDDLE BANNER */
 
   .handcrafted-h2 {
+    display: block;
     border: 0;
     font-size: 100%;
     font: inherit;
     margin: 0;
     padding: 70px;
     text-align: center;
-    vertical-align: baseline;
+    font-family: "PlayfairDisplay";
+    font-style: normal;
+    line-height: 30px;
+    align-content: center;
   }
+
+  .handcrafted-style {
+    font-style: bold;
+  }
+
+  .handcrafted-p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    width: 100%;
+    align-items: center;
+  }
+
+
 
 /* CONTAINER FOR CATEGORIES */
 
@@ -271,6 +308,7 @@
     text-align: center;
     width: 100%;
     line-height: 40px;
+    font-family: "Playfair Display Web", serif;
   }
 
   .cat-p {
@@ -286,6 +324,11 @@
   .price {
     color: #969696;
     font-size: 100%;
+  }
+
+  .bold {
+    font-style: normal;
+    font-weight: 700;
   }
 
   .add-to-cart {
@@ -344,11 +387,12 @@
   .bottom-banner-p {
     font-family: 'Playfair Display Web',serif;
     line-height: 1;
-    /* width: 60%; */
   }
 
   .type-email { 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2rem auto 0;
     max-width: 600px;
     position: relative;
@@ -375,18 +419,19 @@
     padding: .7rem 2rem;
     position: absolute;
     right: 5rem;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
   }
 
 /* FOOTER */
 
   .footer {
-    align-items: center;
+    /* align-items: center; */
     background-color: #242424;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 4rem;
+    text-align: left;
   }
 
   .info-a {
@@ -430,6 +475,12 @@
     .carousel-cell {
       width: 50%;
     }
+
+    .flex-item:nth-of-type(1),
+    .flex-item:nth-of-type(6) 
+    {
+        flex-basis: 50%;
+
   }
 
   @media screen and (min-width: 1240px){
@@ -451,3 +502,4 @@
     }
   }
 
+  }
