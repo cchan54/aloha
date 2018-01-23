@@ -5,21 +5,23 @@ $('.main-carousel').flickity({
   cellAlign: 'left',
   contain: true,
   autoPlay: 5000,
-  wrapAround: true
+  wrapAround: true,
+  prevNextButtons: false
 });
 
-$('form').on("submit", function(event) {
-  event.preventDefault();
-
-  if ($('type-email').val() == '') {
-    alert('Please provide a valid email address.');
-  } 
-  else {
-    alert('Thanks for subscribing!');
-    $('type-email').val('');
+$("form").on("submit", function() {
+  var emailValue;
+  emailValue = $("input").val();
+ 
+  if($("#email-form").val()=="") {
+    alert("Please input a valid email.");
+    return false;
+  } else {
+    alert ("Thanks for subscribing!");
+    return false;
+ 
   }
-});
-
+  });
 
 // smoothscroll
 $('a[href*="#"]')

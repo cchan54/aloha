@@ -19,7 +19,7 @@
       <img src="images/aloha-logo.svg">
     </div>
 
-    <nav class="nav-container">
+    <nav class="nav-container nav-ul">
       <ul>
         <li><a class="nav-a" href="#about">About</a></li>
         <li><a class="nav-a" href="#shop">Shop</a></li>
@@ -28,52 +28,48 @@
       </ul>
     </nav>
 
-    <div class="cart">
+    <div class="cart container-cart">
       <img src="images/cart-icon.svg">
     </div>
   </div>
 </header>
 
-  <div>
     <section class="hero-banner container">
       <p class="collection">NEW COLLECTION</p>
       <h1 class="seasons">Spring/Summer 2017</h1>
     </section>
-  </div>
 
-  <div>
-    <section class="handcrafted-h2">
+    <section id="about" class="handcrafted-h2">
       <h2>Hand-Crafted <span class="bold">Styles</span></h2>
       </h2>
       <p class="handcrafted-p">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
         for updates below</p>
     </section>
-  </div>
 
-<div class="carousel-wrapper">
-  <div class="box-container">
-    <div class="box-mens flex-item">
+
+<div id="shop" class="carousel-wrapper box-container">
+    <div class="box-mens flex-item box-wide">
       <h3>MEN'S</h3>
     </div>
-    <div class="box-trends flex-item">
+    <div class="box-trends flex-item box-square">
       <h3>TRENDS</h3>
     </div>
-    <div class="box-glasses flex-item">
+    <div class="box-glasses flex-item box-square">
       <h3>GLASSES</h3>
     </div>
-    <div class="box-sale flex-item">
+    <div class="box-sale flex-item box-square">
       <h3>SALE</h3>
     </div>
-    <div class="box-bags flex-item">
+    <div class="box-bags flex-item box-square">
       <h3>BAGS</h3>
     </div>
-    <div class="box-womens flex-item">
+    <div class="box-womens flex-item box-wide">
       <h3>WOMEN'S</h3>
     </div>
   </div>
 </div>
 
-  <section class="most-loved-products">
+  <section id="featured" class="most-loved-products">
     <h2>
       Most-Loved <span class="bold">Products</span>
     </h2>
@@ -142,50 +138,47 @@
         <p class="price">$39.00</p>
         <button class="add-to-cart">Add to Cart</button>
       </div>
-
   </div>
 
-  <section class="bottom-banner container">
-    <div>
-      <h3 class= "bottom-banner-h3">Sign-up for <strong>Updates</strong></h3>
+  <section>
+    <div id="updates" class="bottom-banner container">
+      <h3 class= "bottom-banner-h3">Sign-up for <span class="bold">Updates</span></h3>
       <p class= "bottom-banner-p">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
-        our blog. Unsubscribe at any time</p>
+        our blog. Unsubscribe at any time.</p>
+      <form>
+        <div class="type-email">
+          <input class="email-address" id="email-form" type="email" name="email-input" placeholder="Your Email"/>
+          <input class="subscribe" type="submit" name="submit" value="Subscribe">
+        </div>
+      </form>
     </div>
-
-    <form>
-      <div class="type-email">
-        <input class="email-address" type="email" name="email-input" placeholder="Your Email"/>
-        <input class="subscribe" type="submit" name="submit" value="Subscribe">
-      </div>
-    </form>
-  </section>
-
+</section>
 
   <footer class="footer">
 
-      <section class="info-a">
-          <p>2016 Aloha Apparel Co.</p>
-          <p>Powered by HTML and CSS</p>
-          <p>604-604-6040</p>
-          <a class="email" href="mailto:info@alohaapparel.com">info@alohaapparel.com</a>
+    <section class="info-a">
+      <p>© 2018 Aloha Apparel Co.</p>
+      <p>Powered by HTML and CSS</p>
+      <p>604-604-6040</p>
+      <a class="email" href="mailto:info@alohaapparel.com">info@alohaapparel.com</a>
       
-
-          <div class="address">
-              <p>1490 W Broadway</p>
-              <p>Vancouver, BC, Canada</p>
-          </div>
-
+      <div class="address">
+        <p>1490 W Broadway</p>
+        <p>Vancouver, BC, Canada</p>
+      </div>
     </section>
 
-      
-    
-      <section class="social-media">
-        <p>Facebook</p>
-        <p>Twitter</p>
-        <p>Instagram</p>
-        <p>Pinterest</p>
-        <p>Google+</p>
-      </section>
+    <section>
+      <div>
+        <ul>
+          <li><a class="social-media" href="#facebook"><i class="fa fa-facebook"></i>   Facebook</a></li>
+          <li><a class="social-media" href="#twitter"><i class="fa fa-twitter"></i>   Twitter</a></li>
+          <li><a class="social-media" href="#instagram"><i class="fa fa-instagram"></i>   Instagram</a></li>
+          <li><a class="social-media" href="#pintrest"><i class="fa fa-pinterest"></i>   Pintrest</a></li>
+          <li><a class="social-media" href="#googleplus"><i class="fa fa-google"></i>   Google+</a></li>
+        </ul>
+      </div>
+    </section>
     
     </footer>
     
